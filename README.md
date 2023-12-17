@@ -37,16 +37,17 @@ AbsI/CC'TCGAGG//
 AccI/GT'MKAC//
 AccII/CG'CG//
 AccIII/T'CCGGA//
-Acc16I/TGC'GCA// Acc36I/ACCTGCNNNN'NNNN/'NNNNNNNNGCAGGT// ...
+Acc16I/TGC'GCA// Acc36I/ACCTGCNNNN'NNNN/'NNNNNNNNGCAGGT//
+...
 
 ```
 
-### Part 2A: Query Tree Program (query_tree.cc)
+## Part 2A: Query Tree Program (query_tree.cc)
 
-#### Description
+### Description
 The `query_tree.cc` program reads the `rebase210.txt` database file, constructs an AVL tree of `SequenceMap` objects, and allows users to query the tree using recognition sequences.
 
-#### How to Run
+### How to Run
 ```bash
 ./query_tree rebase210.txt
 

@@ -1,6 +1,6 @@
 # AVL Tree 
-## By Ali Faiyaz
-This repository contains the implementation for an AVL Tree.
+
+This repository contains the implementation for an AVL Tree created by Ali Faiyaz
 
 ## Part 1: SequenceMap Class (sequence_map.h)
 

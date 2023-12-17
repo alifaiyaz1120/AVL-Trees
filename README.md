@@ -17,14 +17,39 @@ The `sequence_map.h` file contains the implementation of the `SequenceMap` class
 - Overloaded Operators `operator<<` and `operator>>`
 - Member Function: `void Merge(const SequenceMap &other_sequence)`
 
-## Part 2A: Query Tree Program (query_tree.cc)
+## Part 2: AVL Tree Programs
 
 ### Description
-- The `query_tree.cc` program reads a database file, constructs an AVL tree of `SequenceMap` objects, and allows users to query the tree using recognition sequences.
+This section includes programs for constructing and testing AVL trees based on a provided database file (`rebase210.txt`) and query file (`sequences.txt`).
 
-### How to Run
+### Input Files
+For this assignment, you will receive as input two text files: `rebase210.txt` and `sequences.txt`. The `rebase210.txt` file contains the name of a restriction enzyme and possible DNA sites the enzyme may cut in the following format:
+
+- enzyme_acronym/recognition_sequence/.../recognition_sequence//
+
+For instance the first few lines of rebase210.txt are:
+
 ```bash
-./query_tree <database_file_name>
+
+AanI/TTA'TAA// AarI/CACCTGCNNNN'NNNN/'NNNNNNNNGCAGGTG// AasI/GACNNNN'NNGTC//
+AatII/GACGT'C//
+AbsI/CC'TCGAGG//
+AccI/GT'MKAC//
+AccII/CG'CG//
+AccIII/T'CCGGA//
+Acc16I/TGC'GCA// Acc36I/ACCTGCNNNN'NNNN/'NNNNNNNNGCAGGT// ...
+
+```
+
+### Part 2A: Query Tree Program (query_tree.cc)
+
+#### Description
+The `query_tree.cc` program reads the `rebase210.txt` database file, constructs an AVL tree of `SequenceMap` objects, and allows users to query the tree using recognition sequences.
+
+#### How to Run
+```bash
+./query_tree rebase210.txt
+
 ```
 
 ## Part 2B: Test Tree Program (test_tree.cc)
@@ -34,7 +59,7 @@ The `sequence_map.h` file contains the implementation of the `SequenceMap` class
 
 ### How to Run
 ```bash
-./test_tree <database_file_name> <queries_file_name>
+./test_tree rebase210.txt sequences.txt
 ```
 
 ## Part 2C: Modified AVL Tree Implementation (avl_tree_p2c.h)
@@ -43,7 +68,7 @@ The `sequence_map.h` file contains the implementation of the `SequenceMap` class
 - The avl_tree_p2c.h file contains a modified AVL Tree implementation that directly implements double rotations instead of calling two single rotations.
 
 ```bash
-./test_tree_mod <database_file_name> <queries_file_name>
+./test_tree_mod rebase210.txt sequences.txt
 ```
 
 ## Makefile 

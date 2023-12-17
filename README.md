@@ -1,5 +1,5 @@
 # AVL Tree 
-
+## By Ali Faiyaz
 This repository contains the implementation for an AVL Tree.
 
 ## Part 1: SequenceMap Class (sequence_map.h)

@@ -23,7 +23,7 @@ The `sequence_map.h` file contains the implementation of the `SequenceMap` class
 This section includes programs for constructing and testing AVL trees based on a provided database file (`rebase210.txt`) and query file (`sequences.txt`).
 
 ### Input Files
-For this assignment, you will receive as input two text files: `rebase210.txt` and `sequences.txt`. The `rebase210.txt` file contains the name of a restriction enzyme and possible DNA sites the enzyme may cut in the following format:
+There is two text files: `rebase210.txt` and `sequences.txt`. The `rebase210.txt` file contains the name of a restriction enzyme and possible DNA sites the enzyme may cut in the following format:
 
 - enzyme_acronym/recognition_sequence/.../recognition_sequence//
 
